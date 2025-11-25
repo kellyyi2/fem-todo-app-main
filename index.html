@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@100;700&display=swap">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+      <div class="header">
+        <h1 class="todo-header">TODO</h1>
+
+        <button class="theme-toggle-button">
+          <img src="./images/icon-sun.svg" alt="Light mode icon">
+        </button>
+      </div>
+
+      <form class="create-todo">
+        <input class="todo-toggle" type="checkbox"/>
+        <input class="new-item" type="text" name="new-todo" placeholder="Create a new todo..."/>
+      </form>
+
+
+      <ul id="todo-list">
+        <li id="list-item">
+          <input type="checkbox" class="todo-toggle" />
+          <span class="todo-text">Todo Item</span>
+          <button class="close-button">X</button>
+        </li>
+      </ul>
+
+      <footer id="list-footer">
+        <span id="num-items-left">items left</span>
+        <button id="clear-button">Clear Completed</button>
+      </footer>
+
+      <div id="list-controls">
+        <button class="control-button">All</button>
+        <button class="control-button">Active</button>
+        <button class="control-button">Completed</button>
+      </div>
+
+      <p id="bottom-text">Drag and drop to reorder list</p>
+    </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kelly Yi</a>.
+  </div>
+</body>
+</html>
