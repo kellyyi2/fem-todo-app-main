@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@100;700&display=swap">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Todo app</title>
@@ -18,13 +22,9 @@
 </head>
 
 <body>
-    <header>
-    </header>
-
     <main>
       <div class="header">
         <h1 class="todo-header">TODO</h1>
-
         <button class="theme-toggle-button">
           <img src="./images/icon-sun.svg" alt="Light mode icon">
         </button>
@@ -35,25 +35,27 @@
         <input class="new-item" type="text" name="new-todo" placeholder="Create a new todo..."/>
       </form>
 
+      <div class="main-todo-section">
+        <ul class="todo-list">
+          <li class="list-item">
+            <input type="checkbox" class="todo-toggle" />
+            <span class="todo-text">Todo Item</span>
+            <button class="close-button"></button>
+          </li>
+        </ul>
 
-      <ul class="todo-list">
-        <li class="list-item">
-          <input type="checkbox" class="todo-toggle" />
-          <span class="todo-text">Todo Item</span>
-          <button class="close-button">X</button>
-        </li>
-      </ul>
+        <footer class="list-footer">
+          <span class="num-items-left">items left</span>
 
-      <footer class="list-footer">
-        <span class="num-items-left">items left</span>
-        <button class="clear-button">Clear Completed</button>
-      </footer>
-
-      <div class="list-controls">
-        <button class="control-button">All</button>
-        <button class="control-button">Active</button>
-        <button class="control-button">Completed</button>
+          <button class="clear-button">Clear Completed</button>
+        </footer>
       </div>
+
+       <div class="list-controls">
+            <button class="control-button">All</button>
+            <button class="control-button">Active</button>
+            <button class="control-button">Completed</button>
+       </div>
 
       <p class="bottom-text">Drag and drop to reorder list</p>
     </main>
